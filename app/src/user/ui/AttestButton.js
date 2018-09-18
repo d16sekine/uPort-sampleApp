@@ -10,9 +10,9 @@ class AttestButton extends Component {
             uport.attestCredentials({
               sub: credentials.address,
               claim: {
-                "Event": "Ethereal Summit Conference",
+                "Event": "Personal Data Meeting",
                 "Date": month[d.getMonth()] + " " + d.getDate() + "," + d.getFullYear(),
-                "Details": "Proof of Attendance"
+                "Details": "Let's discuss Mydata2018."
               }
             })
           })

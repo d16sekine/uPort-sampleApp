@@ -13,6 +13,8 @@ class Home extends Component {
             <p>This particular box comes with UPort authentication built-in.</p>
             <p>NOTE: To interact with your smart contracts through UPort's web3 instance, make sure they're deployed to the Ropsten testnet.</p>
             <p>In the upper-right corner, you'll see a login button. Click it to login with UPort. There is an authenticated route, "/dashboard", that displays the UPort user's name once authenticated.</p>
+            <h2>Sample Contract</h2>
+            <AttestButton />
             <h3>Redirect Path</h3>
             <p>This example redirects home ("/") when trying to access an authenticated route without first authenticating. You can change this path in the failureRedirectUrl property of the UserIsAuthenticated wrapper on <strong>line 9</strong> of util/wrappers.js.</p>
             <h3>Accessing User Data</h3>
@@ -25,7 +27,6 @@ class Home extends Component {
               {"}"}<br/><br/>
               {"// Use in component."}<br/>
               {"Hello { this.props.authData.name }!"}
-              <AttestButton />
             </code></pre>
             <h3>Further Reading</h3>
             <p>The React/Redux portions of the authentication fuctionality are provided by <a href="https://github.com/mjrussell/redux-auth-wrapper" target="_blank">mjrussell/redux-auth-wrapper</a>.</p>
